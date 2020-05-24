@@ -5,6 +5,7 @@ trait Num[A]{
   def - (x:A, y:A): A
   def * (x:A, y:A): A
   def / (x:A, y:A): A
+  def % (x:A, y:A): A
   def zero: A
   def one: A
 }
@@ -24,6 +25,8 @@ object Num {
     override def zero: Int = 0
 
     override def one: Int = 1
+
+    override def %(x: Int, y: Int): Int = x%y
   }
 
   implicit object FloatNum extends Num[Float]{
@@ -38,6 +41,8 @@ object Num {
     override def zero: Float = 0f
 
     override def one: Float = 1f
+
+    override def %(x: Float, y: Float): Float = x%y
   }
 
   implicit object DoubleNum extends Num[Double]{
@@ -52,6 +57,8 @@ object Num {
     override def zero: Double = 0D
 
     override def one: Double = 1D
+
+    override def %(x: Double, y: Double): Double = x%y
   }
 
   implicit object LongNum extends Num[Long]{
@@ -66,6 +73,8 @@ object Num {
     override def zero: Long = 0L
 
     override def one: Long = 1L
+
+    override def %(x: Long, y: Long): Long = x%y
   }
 
 }

@@ -1,0 +1,5 @@
+package rational
+
+class RationalSuite {
+
+}
