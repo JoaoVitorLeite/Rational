@@ -55,4 +55,5 @@ The IDE used was [Intellij Idea](https://www.jetbrains.com/idea/).
 * [Link](https://byjus.com/maths/rational-numbers/)
 
 ### License
+
 The LICENSE used is [Apache-2.0](https://github.com/JoaoVitorLeite/Rational/blob/master/LICENSE).
