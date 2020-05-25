@@ -5,6 +5,8 @@ Class to represent rational numbers in Scala
 
 ### About
 
+This class as be implemented as generic type 
+
 
 ### Project Structure
 
