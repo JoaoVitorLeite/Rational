@@ -25,7 +25,6 @@ Rational
 |   \---main
 |   |   \---scala
 |   |       \---rational
-|   |               Main.scala
 |   |               Num.scala
 |   |               Rational.scala
 |   |
@@ -36,15 +35,19 @@ Rational
 |
 |
 +---.gitignore
+     build.sbt  
+     download.png
      LICENSE
      README.md
-     download.png
-     build.sbt  
 ```
 
 ### Test
 
 To perform the tests it is necessary to be in the root directory(where the build.sbt file is), then use the `sbt test` command
+
+### IDE
+
+The IDE used was [Intellij Idea](https://www.jetbrains.com/idea/)
 
 ### References
 
