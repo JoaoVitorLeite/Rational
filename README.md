@@ -4,4 +4,4 @@
 Class to represent rational numbers in Scala
 
 ###License
-[here](Rational/LICENSE)
+The LICENSE used is Apache [here](Rational/LICENSE)
