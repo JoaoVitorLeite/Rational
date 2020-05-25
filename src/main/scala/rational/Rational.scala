@@ -3,6 +3,10 @@ package rational
 import Num.Implicits._
 
 /***
+ * @author João Vitor Leite
+ */
+
+/***
  * Class to represent rational numbers in Scala
  *
  * @param num Numerator
