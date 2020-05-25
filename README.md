@@ -1,7 +1,9 @@
 # Rational
 
 ### Description
-Class to represent rational numbers in Scala
+Class to represent rational numbers in Scala. A rational number is a number that can be expressed as a quotient or a fraction p/q of two integers, p being the numerator and q the denominator, where q should be different from zero.
+
+
 
 ### About
 
