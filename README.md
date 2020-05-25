@@ -49,8 +49,8 @@ To perform the tests it is necessary to be in the root directory(where the build
 
 ### References
 
-[1] [Link](https://www.mathsisfun.com/algebra/rational-numbers-operations.html)
-[2] [Link](https://byjus.com/maths/rational-numbers/)
+-[1] [Link](https://www.mathsisfun.com/algebra/rational-numbers-operations.html)
+-[2] [Link](https://byjus.com/maths/rational-numbers/)
 
 
 ### License
