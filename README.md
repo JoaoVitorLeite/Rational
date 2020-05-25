@@ -7,10 +7,9 @@ Class to represent rational numbers in Scala. A rational number is a number that
   <img src="https://github.com/JoaoVitorLeite/Rational/blob/master/download.png">
 </p>
 
-
 ### About
 
-This class was implemented using a generic type, which was implemented [here](https://github.com/JoaoVitorLeite/Rational/blob/master/src/main/scala/rational/Num.scala), which supports some basic algebraic operations and is defined for types Int, Float, Double, Long. The tests made are of simple character, and for this the [Scala Test](https://www.scalatest.org/) was used. In total ?? tests were performed.
+This class was implemented using a generic type, which was implemented [here](https://github.com/JoaoVitorLeite/Rational/blob/master/src/main/scala/rational/Num.scala), which supports some basic algebraic operations and is defined for types Int, Float, Double, Long. The tests made are of simple character, and for this the [Scala Test](https://www.scalatest.org/) was used. In total 25 tests were performed.
 
 ### Project Structure
 
@@ -40,18 +39,17 @@ Rational
      LICENSE
      README.md
      download.png
+     build.sbt  
 ```
 
 ### Test
 
 To perform the tests it is necessary to be in the root directory(where the build.sbt file is), then use the `sbt test` command
 
-
 ### References
 
 * [Link](https://www.mathsisfun.com/algebra/rational-numbers-operations.html)
 * [Link](https://byjus.com/maths/rational-numbers/)
-
 
 ### License
 The LICENSE used is [Apache-2.0](https://github.com/JoaoVitorLeite/Rational/blob/master/LICENSE)
