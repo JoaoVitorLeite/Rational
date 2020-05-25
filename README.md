@@ -1,7 +1,19 @@
 # Rational
 
-###Description
+### Description
 Class to represent rational numbers in Scala
 
-###License
-The LICENSE used is Apache [here](Rational/LICENSE)
+### About
+
+
+### Project Structure
+
+
+
+### References
+
+
+
+
+### License
+The LICENSE used is [Apache-2.0](Rational/LICENSE)
