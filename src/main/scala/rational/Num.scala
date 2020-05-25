@@ -11,6 +11,11 @@ trait Num[A]{
   def neg(x:A): A
   def sqroot(x:A): A
   def abs(x:A): A
+  def pow(x:A, y:A): A
+  def ltn(x:A, y:A): Boolean
+  def ltneq(x:A, y:A): Boolean
+  def gtn(x:A, y:A): Boolean
+  def gtneq(x:A, y:A): Boolean
 
   class Ops(lhs: A){
 
@@ -20,6 +25,10 @@ trait Num[A]{
     def * (rhs: A): A = mul(lhs, rhs)
     def / (rhs: A): A = div(lhs, rhs)
     def % (rhs: A): A = rm(lhs, rhs)
+    def < (rhs: A): Boolean = ltn(lhs, rhs)
+    def <= (rhs: A): Boolean = ltneq(lhs, rhs)
+    def > (rhs: A): Boolean = gtn(lhs, rhs)
+    def >= (rhs: A): Boolean = gtneq(lhs, rhs)
   }
 
   implicit def mkNumOps(lhs: A): Ops = new Ops(lhs)
@@ -57,6 +66,16 @@ object Num {
     override def sqroot(x: Int): Int = math.sqrt(x).toInt
 
     override def abs(x: Int): Int = if(x < 0) -x else x
+
+    override def pow(x: Int, y: Int): Int = math.pow(x, y).toInt
+
+    override def ltn(x: Int, y: Int): Boolean = if(x < y) true else false
+
+    override def ltneq(x: Int, y: Int): Boolean = if(x <= y) true else false
+
+    override def gtn(x: Int, y: Int): Boolean = if(x > y) true else false
+
+    override def gtneq(x: Int, y: Int): Boolean = if(x >= y) true else false
   }
 
   implicit object IntNum extends IntNum with Ordering.IntOrdering
@@ -81,6 +100,16 @@ object Num {
     override def sqroot(x: Float): Float = math.sqrt(x).toFloat
 
     override def abs(x: Float): Float = if(x < 0) -x else x
+
+    override def pow(x: Float, y: Float): Float = math.pow(x, y).toFloat
+
+    override def ltn(x: Float, y: Float): Boolean = if(x < y) true else false
+
+    override def ltneq(x: Float, y: Float): Boolean = if(x <= y) true else false
+
+    override def gtn(x: Float, y: Float): Boolean = if(x > y) true else false
+
+    override def gtneq(x: Float, y: Float): Boolean = if(x >= y) true else false
   }
 
   implicit object FloatNum extends FloatNum with Ordering.Float.TotalOrdering
@@ -106,6 +135,15 @@ object Num {
 
     override def abs(x: Double): Double = if(x < 0) -x else x
 
+    override def pow(x: Double, y: Double): Double = math.pow(x,y)
+
+    override def ltn(x: Double, y: Double): Boolean = if(x < y) true else false
+
+    override def ltneq(x: Double, y: Double): Boolean = if(x <= y) true else false
+
+    override def gtn(x: Double, y: Double): Boolean = if(x > y) true else false
+
+    override def gtneq(x: Double, y: Double): Boolean = if(x >= y) true else false
   }
 
   implicit object DoubleNum extends DoubleNum with Ordering.Double.TotalOrdering
@@ -130,6 +168,16 @@ object Num {
     override def sqroot(x: Long): Long = math.sqrt(x.toDouble).toLong
 
     override def abs(x: Long): Long = if(x < 0) -x else x
+
+    override def pow(x: Long, y: Long): Long = math.pow(x,y).toLong
+
+    override def ltn(x: Long, y: Long): Boolean = if(x < y) true else false
+
+    override def ltneq(x: Long, y: Long): Boolean = if(x <= y) true else false
+
+    override def gtn(x: Long, y: Long): Boolean = if(x > y) true else false
+
+    override def gtneq(x: Long, y: Long): Boolean = if(x >= y) true else false
   }
 
   implicit object LongNum extends LongNum with Ordering.LongOrdering

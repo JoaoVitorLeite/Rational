@@ -98,6 +98,20 @@ class Rational[A](val num: A, val den: A)(implicit op: Num[A]){
   def * (other: Rational[A]): Rational[A] = new Rational(n*other.n, d*other.d)
 
   /***
+   * Method for applying the multiplication by a constant
+   * @param other Any number
+   * @return A rational number
+   */
+  def * (other: A): Rational[A] = new Rational(other*n,d)
+
+  /***
+   * Method for applying the power of a rational number
+   * @param other Power to be applied
+   * @return A rational number
+   */
+  def pow(other: A): Rational[A] = new Rational(op.pow(n,other), op.pow(d,other))
+
+  /***
    * Method to return the inverse of the rational number
    * @return A rational number
    */
@@ -121,6 +135,34 @@ class Rational[A](val num: A, val den: A)(implicit op: Num[A]){
    * @return A rational number
    */
   def squareRoot: Rational[A] = new Rational(op.sqroot(n), op.sqroot(d))
+
+  /***
+   * Method for comparing rational numbers
+   * @param other A rational number
+   * @return It returns true if a rational number is less than that the other
+   */
+  def < (other: Rational[A]): Boolean = if((n/d) < (other.n/other.d)) true else false
+
+  /***
+   * Method for comparing rational numbers
+   * @param other A rational number
+   * @return It returns true if a rational number is less than or equal that the other
+   */
+  def <= (other: Rational[A]): Boolean = if((n/d) <= (other.n/other.d)) true else false
+
+  /***
+   * Method for comparing rational numbers
+   * @param other A rational number
+   * @return It returns true if a rational number is greater than that the other
+   */
+  def > (other: Rational[A]): Boolean = if((n/d) > (other.n/other.d)) true else false
+
+  /***
+   * Method for comparing rational numbers
+   * @param other A rational number
+   * @return It returns true if a rational number is greater than or equal that the other
+   */
+  def >= (other: Rational[A]): Boolean = if((n/d) >= (other.n/other.d)) true else false
 
   /***
    * Method to return the rational number in string format
