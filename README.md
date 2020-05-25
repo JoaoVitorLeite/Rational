@@ -8,6 +8,33 @@ Class to represent rational numbers in Scala
 
 ### Project Structure
 
+"""
+Rational
+|
+|
+|
+|
+\--src
+|   |
+|   |
+|   \---main
+|   |   \---scala
+|   |       \---rational
+|   |               Main.scala
+|   |               Num.scala
+|   |               Rational.scala
+|   |
+|   \---test
+|       \---scala
+|           \---rational
+|                   RationalSuite.scala
+|
+|
++---.gitignore
+     LICENSE
+     README.md
+"""
+
 
 
 ### References
