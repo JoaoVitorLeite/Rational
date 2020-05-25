@@ -8,7 +8,7 @@ Class to represent rational numbers in Scala
 
 ### Project Structure
 
-"""
+```bash
 Rational
 |
 |
@@ -33,7 +33,7 @@ Rational
 +---.gitignore
      LICENSE
      README.md
-"""
+```
 
 
 
