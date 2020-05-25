@@ -8,12 +8,15 @@ class Rational[A](val num: A, val den: A)(implicit op: Num[A]){
   def this(nume: A)(implicit op: Num[A]){
     this(nume, op.one)
   }
-
   @scala.annotation.tailrec
   private def gcd(x:A, y:A): A = if(y == 0) x else gcd(y, x%y)
-  private val g: A = gcd(num, den)
-  private val n: A = num/g
-  private val d: A = den/g
+  private val g: A = gcd(op.abs(num), op.abs(den))
+  private val res = (num, den) match {
+    case (_,b) if op.abs(b) != b => (-num/g, -den/g)
+    case _ => (num/g, den/g)
+  }
+  private val n: A = res._1
+  private val d: A = res._2
   def + (other: Rational[A]): Rational[A] = new Rational(n*other.d + d*other.n, d*other.d)
   def unary_- : Rational[A] = new Rational(-n, d)
   def - (other: Rational[A]): Rational[A] = this + -other

@@ -10,6 +10,7 @@ trait Num[A]{
   def one: A
   def neg(x:A): A
   def sqroot(x:A): A
+  def abs(x:A): A
 
   class Ops(lhs: A){
 
@@ -54,6 +55,8 @@ object Num {
     override def neg(x: Int): Int = -x
 
     override def sqroot(x: Int): Int = math.sqrt(x).toInt
+
+    override def abs(x: Int): Int = if(x < 0) -x else x
   }
 
   implicit object IntNum extends IntNum with Ordering.IntOrdering
@@ -76,6 +79,8 @@ object Num {
     override def neg(x: Float): Float = -x
 
     override def sqroot(x: Float): Float = math.sqrt(x).toFloat
+
+    override def abs(x: Float): Float = if(x < 0) -x else x
   }
 
   implicit object FloatNum extends FloatNum with Ordering.Float.TotalOrdering
@@ -98,6 +103,9 @@ object Num {
     override def neg(x: Double): Double = -x
 
     override def sqroot(x: Double): Double = math.sqrt(x)
+
+    override def abs(x: Double): Double = if(x < 0) -x else x
+
   }
 
   implicit object DoubleNum extends DoubleNum with Ordering.Double.TotalOrdering
@@ -120,6 +128,8 @@ object Num {
     override def neg(x: Long): Long = -x
 
     override def sqroot(x: Long): Long = math.sqrt(x.toDouble).toLong
+
+    override def abs(x: Long): Long = if(x < 0) -x else x
   }
 
   implicit object LongNum extends LongNum with Ordering.LongOrdering
