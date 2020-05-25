@@ -5,7 +5,7 @@ Class to represent rational numbers in Scala
 
 ### About
 
-This class was implemented using a generic type, which was implemented [here](https://github.com/JoaoVitorLeite/Rational/blob/master/src/main/scala/rational/Num.scala), which supports some basic algebraic operations and is defined for types Int, Float, Double, Long
+This class was implemented using a generic type, which was implemented [here](https://github.com/JoaoVitorLeite/Rational/blob/master/src/main/scala/rational/Num.scala), which supports some basic algebraic operations and is defined for types Int, Float, Double, Long. The tests made are of simple character, and for this the [Scala Test](https://www.scalatest.org/) was used. In total ?? tests were performed.
 
 ### Project Structure
 
@@ -45,4 +45,4 @@ Rational
 
 
 ### License
-The LICENSE used is [Apache-2.0](Rational/LICENSE)
+The LICENSE used is [Apache-2.0](https://github.com/JoaoVitorLeite/Rational/blob/master/LICENSE)
