@@ -5,7 +5,7 @@ Class to represent rational numbers in Scala
 
 ### About
 
-This class was implemented using a generic type, which was implemented [here](Rational/src/main/scala/rational)
+This class was implemented using a generic type, which was implemented [here](Rational/src)
 
 ### Project Structure
 
