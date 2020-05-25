@@ -5,7 +5,7 @@ Class to represent rational numbers in Scala
 
 ### About
 
-This class was implemented using a generic type, which was implemented [here](Rational/LICENSE)
+This class was implemented using a generic type, which was implemented [here](Rational/src/main/scala/rational/Num), which supports some basic algebraic operations and is defined for types Int, Float, Double, Long
 
 ### Project Structure
 
@@ -40,6 +40,7 @@ Rational
 
 ### References
 
+[1] [Link](https://www.mathsisfun.com/algebra/rational-numbers-operations.html)
 
 
 
