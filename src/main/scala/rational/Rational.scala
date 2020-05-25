@@ -2,6 +2,9 @@ package rational
 
 import Num.Implicits._
 
+///Terminar os testes
+///VER COMO EDITAR O README ou MELHORAR O README
+
 class Rational[A](val num: A, val den: A)(implicit op: Num[A]){
   require(den != 0, "The denominator must be different of zero")
   require(den != 0 && num != 0, "The rational must be diferent of zero")
