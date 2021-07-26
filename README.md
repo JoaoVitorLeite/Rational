@@ -47,7 +47,7 @@ To perform the tests it is necessary to be in the root directory(where the build
 
 ### IDE
 
-The IDE used was [Intellij Idea](https://www.jetbrains.com/idea/).
+The IDE used was [Intellij Idea](https://www.jetbrains.com/idea/)
 
 ### References
 
